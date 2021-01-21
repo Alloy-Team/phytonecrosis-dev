@@ -1,5 +1,5 @@
-scoreboard objectives add sneak minecraft.custom:minecraft.sneak_time
-scoreboard objectives add hit minecraft.custom:minecraft.damage_dealt
-scoreboard objectives add jump minecraft.custom:minecraft.jump
-scoreboard objectives add pc_id dummy
+tellraw @a[tag=ac_debug] [{"text":"> ","color":"#17F8C5"},{"text":"Phytonecrosis has reloaded!","color":"gray"}]
+tellraw @a[tag=ac_debug] [{"text":"> ","color":"#17F8C5"},{"text":"To remove this message, remove the ac_debug tag from yourself.","color":"gray"}]
+
+# score creations
 scoreboard objectives add pc_vid dummy
