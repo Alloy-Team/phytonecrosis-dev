@@ -3,13 +3,16 @@
 #
 execute at @e[tag=pc_ptarget] if score @e[tag=pc_ptarget,sort=nearest,limit=1] pc_vid = @s ac_entity_id run tag @e[tag=pc_ptarget,sort=nearest,limit=1] add pc_ptargetcon
 
-tp @e[tag=pc_ptargetcon] ~ ~ ~ ~ ~
+tp @e[tag=pc_ptargetcon] ^ ^ ^ ~ ~
 
+effect give @e[tag=pc_ptargetcon] minecraft:resistance 10 255 true
+# > > > kill
 
 # > > > Specified Plants
-# Peashooter (Example, remove these parenthesis when you actually code it kaz lmao)
+# Peashooter
 execute as @s[tag=pc_plant_peashooter] run function pvz:plant/peashooter/main
 
+scoreboard players reset @e[scores={pc_pshoot=200..}] pc_pshoot
 
 # Removes pc_ptargetcon from all plant villagers.
 tag @e[tag=pc_ptarget] remove pc_ptargetcon

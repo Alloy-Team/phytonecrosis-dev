@@ -3,3 +3,5 @@ tellraw @a[tag=ac_debug] [{"text":"> ","color":"#17F8C5"},{"text":"To remove thi
 
 # score creations
 scoreboard objectives add pc_vid dummy
+scoreboard objectives add pc_pshoot dummy
+scoreboard objectives add pc_health health
