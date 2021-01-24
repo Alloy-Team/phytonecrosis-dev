@@ -11,6 +11,7 @@ effect give @e[tag=pc_ptargetcon] minecraft:resistance 10 255 true
 # > > > Specified Plants
 # Peashooter
 execute as @s[tag=pc_plant_peashooter] run function pvz:plant/peashooter/main
+execute as @e[tag=pc_pea] at @s run function pvz:plant/peashooter/pshoot
 
 scoreboard players reset @e[scores={pc_pshoot=200..}] pc_pshoot
 
